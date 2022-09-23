@@ -14,7 +14,7 @@ function App() {
       <Route exact path="/"   component={Home}  />
       <Route exact path="/about"  component={About} />
       <Route exact path="/contact"  component={Contact} />
-      {/* <Route path='*' component={Error} /> */}
+      {/* <Route path='*' component={Error} /> */} 
     </Switch>
       {/* <Switch>
         <Route exact path="/">
@@ -27,7 +27,7 @@ function App() {
           {<Contact />}
         </Route>
         <Route component={Error} />
-        
+        only error page not working 
       </Switch> */}
       
     </>
