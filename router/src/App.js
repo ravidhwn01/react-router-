@@ -10,9 +10,10 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 import Error from './Error'
+import User from "./User";
 
 
-export default function BasicExample() {
+export default function App() {
   return (
     <Router>
       <div>
@@ -25,6 +26,9 @@ export default function BasicExample() {
           </li>
           <li>
             <Link to="/Contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/user/ravi/dhawan">User</Link>
           </li>
         </ul>
 
@@ -40,6 +44,9 @@ export default function BasicExample() {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/user/:fname/:lname">
+            <User />
           </Route>
           <Route path="*">
             <Error />
